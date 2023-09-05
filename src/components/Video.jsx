@@ -58,11 +58,12 @@ export default function Video() {
         ref={$videoPlayer}
         type='video/mp4'
         src= 'porshe.mp4'
-        poster='https://robbreport.com/wp-content/uploads/2017/03/lambo.png'
+        controls
         onTimeUpdate={handleTimeUpdate}
+        
       />
-        <div className="controls">
-            <TbPlayerSkipForwardFilled onClick={toggleVideoPLay} style={{fontSize: '30px' }}></TbPlayerSkipForwardFilled>
+        <div className="controls" style={{display: 'none'}}>
+            <TbPlayerSkipForwardFilled onClick={toggleVideoPLay} style={{fontSize: '10x' }}></TbPlayerSkipForwardFilled>
 
             <input 
                 type="range"

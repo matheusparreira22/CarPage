@@ -1,4 +1,5 @@
 import React from 'react'
+import './About.css'
 export default function AboutSection() {
   return (
     <div className='section-about'>
@@ -15,6 +16,7 @@ export default function AboutSection() {
             Your 
         </p>
         <p className='about-text-title'>Machine</p>
+        <br />
         <p>Conheça Nosso Trabalho</p>
       </div>
     </div>

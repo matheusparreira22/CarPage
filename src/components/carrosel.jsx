@@ -1,6 +1,7 @@
 import { React, useRef } from 'react'
 import { BiSolidDirectionLeft} from 'react-icons/bi'
 import {RiDirectionFill} from 'react-icons/ri'
+import './Carrousel.css'
 export default function Carrosel() {
     const carrosel = useRef(null)
 
@@ -13,7 +14,10 @@ export default function Carrosel() {
     }
   return (
     <div className='carroselContainer'>
+            <BiSolidDirectionLeft  className='icon-direction'onClick={onHandleLeft}></BiSolidDirectionLeft>
       <div className='carrosel' ref={carrosel}>
+  
+      
         <div className='item'>
             <div className="image">
             <img src="https://w0.peakpx.com/wallpaper/444/619/HD-wallpaper-porsche-in-black-porsche-cars-black.jpg" alt="" />
@@ -29,7 +33,7 @@ export default function Carrosel() {
     
         <div className='item'>
             <div className="image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCgJl5L_aPErIej1zAO0ed_Zy49Vn-ELMeiK0xRUosU3OeQELdmpTwCo7CfQKCXo10FW8&usqp=CAU" alt="" />
+            <img src="https://i.pinimg.com/236x/e4/7a/4f/e47a4fbed82dffff39c181c9a537a69c.jpg" alt="" />
             </div>
             <span >Ferrari P.S</span>
         </div>
@@ -66,7 +70,6 @@ export default function Carrosel() {
 
        
       </div>
-         <BiSolidDirectionLeft  className='icon-direction'onClick={onHandleLeft}></BiSolidDirectionLeft>
          <RiDirectionFill  className='icon-direction' onClick={onHandleRigth}></RiDirectionFill>
     </div>
   ) 

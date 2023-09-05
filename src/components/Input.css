@@ -1,0 +1,36 @@
+.Form--Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.Form--Container form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Form--Container input{
+    color: rgb(252, 252, 252);
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 2px rgb
+}
+
+.Form--Container button{
+    padding: 5px;
+    background-color: red;
+    color: aliceblue;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 2px rgb(167, 1, 1);
+}
+.Input--Title{
+    font-size: 24px;
+}
